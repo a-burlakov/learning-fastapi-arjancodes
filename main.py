@@ -55,7 +55,7 @@ def query_item_by_parameters(
             (
                 name is None or item.name == name,
                 price is None or item.price == price,
-                count is None or item.count != count,
+                count is None or item.count == count,
                 category is None or item.category is category,
             )
         )
