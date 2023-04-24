@@ -49,7 +49,7 @@ def query_item_by_parameters(
     price: float | None = None,
     count: int | None = None,
     category: Category | None = None,
-) -> dict[str, Selection]:
+) -> dict[str, Selection | list[Item]]:
     def check_item(item: Item) -> bool:
         return all(
             (
